@@ -4,7 +4,7 @@ import { Feather } from "@expo/vector-icons";
 import { colors, spacing, fontSize } from "./theme";
 
 interface EmptyStateProps {
-  icon?: keyof typeof Feather.glyphMap; // TypeScript valida o nome do ícone
+  icon?: keyof typeof Feather.glyphMap;
   title?: string;
   description?: string;
 }
@@ -27,9 +27,9 @@ export function EmptyState({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // ocupa todo o espaço disponível
-    alignItems: "center", // centraliza horizontalmente
-    justifyContent: "center", // centraliza verticalmente
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
     gap: spacing.sm,
     paddingHorizontal: spacing.xl,
     paddingTop: spacing.xxl,
